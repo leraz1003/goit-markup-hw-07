@@ -44,6 +44,11 @@
     top: 8px;
 
     transform: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            fill: var(--accent-color);
+        }
 }
 
 .close-icon {
@@ -51,16 +56,10 @@
     height: 11px;
 }
 
-.modal-close:hover,
-.modal-close:focus {
-    fill: var(--accent-color);
-}
+
 
 .modal-title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    letter-spacing: 0.03em;
+    @include font(20, 700, 1.15, 0.03em);
     color: var(--primary-text-color);
 
     margin-bottom: 30px;
@@ -81,15 +80,15 @@
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-}
+    &:focus,
+    &:hover {
+        border-color: var(--accent-color);
+        outline: transparent;
+        }
+    }
 
-.form-input:focus,
-.form-input:hover,
-.form-comment:hover,
-.form-comment:focus {
-    border-color: var(--accent-color);
-    outline: transparent;
-}
+
+
 
 .form-input:hover+svg,
 .form-input:focus+svg {
@@ -97,10 +96,8 @@
 }
 
 .form-label {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+
+    @include font (12, 400, 1.17,0.01em );
 
     color: #757575;
 
@@ -135,15 +132,18 @@
     resize: none;
 
     font-family: 'Roboto';
+
+    &:hover,
+    &:focus {
+            border-color: var(--accent-color);
+            outline: transparent;
+        }
 }
 
 .form-comment::placeholder {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    @include font(12, 400, 1.17, 0.01em);
 
     color: rgba(117, 117, 117, 0.5);
 }
@@ -209,13 +209,7 @@
     border: transparent;
     cursor: pointer;
 
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-
-
-    letter-spacing: 0.06em;
+    @include font(16, 700, 1.875, 0.06em);
 
     color: #FFFFFF;
 

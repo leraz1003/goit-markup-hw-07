@@ -2,17 +2,19 @@
 @import'./base/hidden';
 
 @import './utils/variables';
+@import './utils/mixin';
 
 @import './components/container';
 @import './components/logo';
 @import'./components/btn';
+@import './components/title';
 
 @import './layouts/header';
 @import './layouts/hero';
 @import './layouts/preference';
 @import './layouts/work';
 @import './layouts/team';
-@import './layouts/clients';
+@import './layouts/users';
 @import './layouts/modal';
 @import './layouts/portfolio';
 @import './layouts/footer';
