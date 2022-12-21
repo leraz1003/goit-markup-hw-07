@@ -3,20 +3,18 @@
 .work-section {
     padding-top: 0;
 }
-
 .heading {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    text-align: center;
-    margin-bottom: 50px;
+    text-align: center;  
+    margin-bottom: 50px; 
 }
-
-.working-list {
+.working-list{
     display: flex;
 }
-
-.working-list .working-item:not(:last-child) {
+.working-list .working-item:not(:last-child)
+{
     margin-right: 30px;
 }
 
@@ -26,18 +24,18 @@
 
 .work-title {
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    color: #FFFFFF;
-    margin-top: 27px;
-
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+        margin-top: 27px;
+        
 }
 
-.work-desc {
+.work-desc{
     width: 100%;
     height: 70px;
     background-color: rgba(47, 48, 58, 0.8);

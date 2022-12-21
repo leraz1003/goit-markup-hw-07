@@ -69,7 +69,7 @@ body {
 }
 
 .logo {
-  color: var(--primary-text-color);
+  color: var(--accent-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -77,8 +77,17 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo-web {
-  color: var(--accent-color);
+.header_logo > span {
+  color: var(--primary-text-color);
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 28px;
+}
+
+.footer__logo > span {
+  color: #ffffff;
 }
 
 .btn {
@@ -112,17 +121,17 @@ body {
 }
 
 /* header list */
-.header-list {
+.navigation__list {
   display: flex;
   margin-left: 93px;
 }
 
-.header-list .item:not(:last-child) {
+.navigation__list > li:not(:last-child) {
   margin-right: 50px;
 }
 
 /* header link */
-.header-link {
+.navigation__link {
   position: relative;
   display: block;
   color: var(--primary-text-color);
@@ -133,13 +142,10 @@ body {
   padding: 32px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.header-link:hover,
-.header-link:focus {
+.navigation__link:hover, .navigation__link:focus {
   color: var(--accent-color);
 }
-
-.header-link.active-page::after {
+.navigation__link.active-page::after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -153,7 +159,16 @@ body {
 }
 
 /* header contact */
-.header-contact {
+.contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact > li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.contact__link {
   display: flex;
   color: var(--text-color);
   font-weight: 500;
@@ -163,22 +178,11 @@ body {
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.contact-list {
-  display: flex;
-  margin-left: auto;
-}
-
-.contact-list .item:not(:last-child) {
-  margin-right: 40px;
-}
-
-.header-contact:hover,
-.header-contact:focus {
+.contact__link:hover, .contact__link:focus {
   color: var(--accent-color);
 }
 
-.contact-icon {
+.contact__icon {
   fill: currentColor;
   margin-right: 10px;
 }
@@ -199,7 +203,7 @@ body {
   background-size: cover;
 }
 
-.hero-title {
+.title {
   text-transform: uppercase;
   color: rgb(255, 255, 255);
   font-weight: 900;
@@ -209,7 +213,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* preference */
 .preference-list {
   display: flex;
   flex-wrap: wrap;
@@ -742,18 +745,8 @@ body {
   background-color: #2F303A;
   padding: 60px 0;
 }
-
 .footer-conteiner {
   display: flex;
-}
-
-.footer-logo {
-  display: block;
-  margin-bottom: 28px;
-}
-
-.logo-studio {
-  color: #ffffff;
 }
 
 .list .list-item:not(:last-child) {

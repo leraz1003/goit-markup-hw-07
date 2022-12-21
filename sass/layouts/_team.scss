@@ -2,7 +2,7 @@
 
 .team-list {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;  
 }
 
 .team-list .team-item:not(:last-child) {
@@ -15,7 +15,7 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-section {
+.team-section{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -26,7 +26,7 @@
     text-align: center;
 }
 
-.name {
+.name{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -48,15 +48,15 @@
 }
 
 
-.team-soc-list {
+.team-soc-list{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
-
+    margin-bottom: 30px ;
+    
 }
 
-.team-soc-items {
+.team-soc-items{
     width: 44px;
     height: 44px;
 }
@@ -65,11 +65,11 @@
     margin-right: 10px;
 }
 
-.team-soc-link {
+.team-soc-link{
     display: flex;
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    border-radius: 50%; 
     background-color: #FFFFFF;
     justify-content: center;
     align-items: center;
@@ -77,7 +77,7 @@
     fill: currentColor;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
